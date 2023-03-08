@@ -1,12 +1,48 @@
 body 
 {
-  background-color: rgb(6, 25, 30);
+  background-color: rgb(1, 15, 26);
 }
 
 div
 {
   text-align: center;
-  color: rgb(244, 244, 244);
-  font-size: 70px;
+  color: rgb(200, 200, 200);
+  font-size: 100px;
+
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-shadow: rgb(28, 160, 186) 0px 0 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(1, 15, 26);
+  border: 2px solid #fff;
+}
+
+li {
+  float: left;
+  padding: 0 45px;
+}
+
+li a {
+  display: block;
+  color: rgb(200, 200, 200);
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(10, 30, 40);
 }
 
