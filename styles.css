@@ -1,39 +1,47 @@
 body 
 {
-  background-color: rgb(1, 15, 26);
+   background-image: radial-gradient(circle, #012f40, #001c26);
+    background-size: 100%;
 }
 
-div
+
+
+/*Title Stuff*/
+#TitleDiv
 {
   text-align: center;
-  color: rgb(200, 200, 200);
+  color: rgb(200, 200, 200);  
   font-size: 100px;
 
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   font-family: Arial, Helvetica, sans-serif;
 
   text-shadow: rgb(28, 160, 186) 0px 0 15px;
 }
 
-ul {
+
+
+
+/*Top Navigation Menu*/
+.menu {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding-right: 40px;
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background-color: rgb(1, 15, 26);
   border: 2px solid #fff;
+  width: 70%;
 }
 
-li {
+.menu li {
   float: left;
   padding: 0 45px;
 }
 
-li a {
+.menu li a {
   display: block;
   color: rgb(200, 200, 200);
   font-size: 30px;
@@ -42,7 +50,78 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.menu li a:hover {
   background-color: rgb(10, 30, 40);
+}
+
+
+
+
+/*Project Button Grid*/
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.button-grid button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-grid button:hover {
+  scale: 105%;
+}
+
+.button-grid button img {
+  max-width: 101.3%;
+  border-radius: 5px;
+}
+
+
+
+
+/* Modal Styles */
+
+#ModalTitle
+{
+  font-size: 40px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+.modal  
+{
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  backdrop-filter: blur(5px);
+}
+
+.modal-content
+{
+  font-size: 108px;
+  margin: 20px auto;
+  background-color: rgba(240, 240, 240, .80);
+  width: 60%;
+  height: 95%;
+  border-radius: 5px;
+  overflow: auto;
 }
 

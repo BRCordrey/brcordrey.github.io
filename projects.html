@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html>	
 	<head>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<div>PROJECTS</div>
+		<div id="TitleDiv">PROJECTS</div>
 
-		<ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href="projects.html">Projects</a></li>
-  			<li><a href="contact.html">Contact</a></li>
-  			<li><a href="about.html">About</a></li>
-		</ul>
+		<nav>
+  			<ul class="menu">
+    			<li><a href="index.html">Home</a></li>
+    			<li><a href="projects.html">Projects</a></li>
+    			<li><a href="about.html">About</a></li>
+    			<li><a href="contact.html">Contact</a></li>
+  			</ul>
+		</nav>
+
+		<div class="button-grid">
+  			<button id="SelfDrivingCarBtn"><img src="images/Self_Driving_Car_Logo.png"></button>
+  			<button id="RobotWithGrabberBtn"><img src="images/first_robot.png"></button>
+		</div>
+
+		/* Self Driving Car Modal */
+		<div id="SelfDrivingCarModal" class="modal">
+  			<div class="modal-content">
+    			<l1 id="ModalTitle">Self Driving Car</l1>
+    			<img src="images/first_robot.png">
+  			</div>
+		</div>
+
+		/* Robot With Grabber Modal */
+		<div id="RobotWithGrabberModal" class="modal">
+  			<div class="modal-content">
+    			<l1 id="ModalTitle">Omnidirectional Robot</l1>
+    			<img src="images/first_robot.png">
+  			</div>
+		</div>
+
+		<script src="ModalScript.js"></script> 
+
 	</body>
 </html>
