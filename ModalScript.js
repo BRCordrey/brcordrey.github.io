@@ -1,4 +1,3 @@
-// Get the modal
 var car_modal = document.getElementById("SelfDrivingCarModal");
 var robot_modal = document.getElementById("RobotWithGrabberModal");
 
@@ -18,4 +17,5 @@ robot_btn.onclick = function() {
 window.onclick = function(event) {
   if (event.target == car_modal || event.target == robot_modal ) {
     event.target.style.display = "none";
+  }
 }
