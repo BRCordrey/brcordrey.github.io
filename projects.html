@@ -4,13 +4,14 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<div class="radial-gradient-background"></div>
+
 		<div id="TitleDiv">PROJECTS</div>
 
 		<nav>
   			<ul class="menu">
     			<li><a href="index.html">Home</a></li>
     			<li><a href="projects.html">Projects</a></li>
-    			<li><a href="about.html">About</a></li>
     			<li><a href="contact.html">Contact</a></li>
   			</ul>
 		</nav>
@@ -18,9 +19,9 @@
 		<div class="button-grid">
   			<button id="SelfDrivingCarBtn"><img src="images/Self_Driving_Car_Logo.png"></button>
   			<button id="RobotWithGrabberBtn"><img src="images/first_robot.png"></button>
+  			<button id="ChessRobotBtn"><img src="images/chess_robot.png"></button>
 		</div>
 
-		/* Self Driving Car Modal */
 		<div id="SelfDrivingCarModal" class="modal">
   			<div class="modal-content">
     			<l1 id="ModalTitle">Self Driving Car</l1>
@@ -28,7 +29,6 @@
   			</div>
 		</div>
 
-		/* Robot With Grabber Modal */
 		<div id="RobotWithGrabberModal" class="modal">
   			<div class="modal-content">
     			<l1 id="ModalTitle">Omnidirectional Robot</l1>
@@ -36,7 +36,26 @@
   			</div>
 		</div>
 
+		<div id="ChessRobotModal" class="modal">
+  			<div class="modal-content">
+    			<l1 id="ModalTitle">Chess Robot</l1>
+    			<p id="ModalText">This is a program that I wrote in Python to display a game of chess being played with a robotic arm that can move the pieces. The intent with this project was to build a physical chess board with a 2 joint arm under the table that would allow the board to play itself. The program uses "FEN" Strings to decode some of the most famous games ever played, I had to do some tweaking to the "Fen" strings to make them more readable to the user and also the program. This project gave me a good introduction for programing to the physical world as well as some graphics and physics experience with the robot arm. Some day I hope to build the board once I have more experience with electronics. </p>
+    			<div style="text-align:center;">
+    				<video width="500" height="500" autoplay loop>
+  						<source src="Chess_Robot.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video> 
+				</div>
+  			</div>
+		</div>
+
+		<div id="TitleDiv">
+			<l1>Work In Progress</l1>
+		</div>
+		
+
 		<script src="ModalScript.js"></script> 
+		<script src="Background-Gradient-Script.js"></script>
 
 	</body>
 </html>
